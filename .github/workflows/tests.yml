@@ -1,0 +1,31 @@
+---
+name: Tests
+
+on:
+  push:
+    tags-ignore:
+    - '**'
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: 1.23.x
+
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v4
+
+    - name: Build
+      run: go build ./...
+
+    - name: Test
+      run: docker build --tag registry-image-resource --target tests --build-arg base_image=paketobuildpacks/run-jammy-base:latest
