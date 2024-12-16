@@ -15,7 +15,7 @@ require (
 )
 
 require (
-	github.com/VividCortex/ewma v1.1.1 // indirect
+	github.com/VividCortex/ewma v1.2.0 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.16.3 // indirect
 	github.com/distribution/reference v0.6.0 // indirect
 	github.com/docker/cli v27.4.0+incompatible // indirect
