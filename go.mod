@@ -6,9 +6,9 @@ require (
 	github.com/Masterminds/semver/v3 v3.3.1
 	github.com/aws/aws-sdk-go-v2 v1.36.3
 	github.com/aws/aws-sdk-go-v2/config v1.29.14
-	github.com/aws/aws-sdk-go-v2/credentials v1.17.67
+	github.com/aws/aws-sdk-go-v2/credentials v1.17.68
 	github.com/aws/aws-sdk-go-v2/service/ecr v1.44.1
-	github.com/aws/aws-sdk-go-v2/service/sts v1.33.19
+	github.com/aws/aws-sdk-go-v2/service/sts v1.33.20
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/concourse/go-archive v1.0.1
 	github.com/fatih/color v1.18.0
